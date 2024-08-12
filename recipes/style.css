@@ -9,8 +9,14 @@
     display: block;
   }
 .recipe-img:hover {
-    box-shadow: 0 8px 12px 0 white; 
+    box-shadow: 0 10px 20px 0 white; 
     transition: 0.7s;
+}
+.recipe-card {
+    border: 1.5px dotted white;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
 }
 p {
     color: black;
@@ -19,7 +25,6 @@ p {
     margin: 25px 15px auto;
 }
 h1 {
-    background-color: rgb(254, 254, 254);
     color: rgb(40, 37, 37);
     padding: 5%;
     text-align: center;
@@ -27,7 +32,7 @@ h1 {
     text-transform: uppercase;
 }
 h1:hover {
-    filter: brightness(95);
+    filter: drop-shadow(0 0 0.75rem rgb(251, 227, 87));
     transition: 0.7s;
 }
 h2 {
@@ -38,16 +43,16 @@ h2 {
     background-image: linear-gradient(to right, pink, rgb(158, 41, 41), pink);
 }
 ul {
-    display: list-item;
-    list-style-type: "🍴";
     padding-inline: 10ch;
     align-content: center;
 }
 
 ol {
-    display: list-item;
-    list-style: inherit;
     padding-inline: 10ch;
+}
+ul li {
+    display: list-item;
+    list-style-type: "🍴";
 }
 body{
     background-color: rgb(255, 219, 219);
@@ -70,10 +75,12 @@ hr {
     font-weight: 600;
     min-height: 50px;
     min-width: 100px ;
+    cursor:pointer;
 }
 .btn:hover {
     background-color: rgb(173, 30, 30);
     transition: 0.9s;
+    font-weight:900;
 }
 .btn:focus {
     outline-color: transparent;
